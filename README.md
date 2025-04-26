@@ -1,128 +1,141 @@
-# Job Filling Agent (AI Powered) 🦿
+# 🚀 Job Filling Agent: AI-Powered Autonomous Job Applier
 
-This is a web scraping and AI automation bot that automates the process of job applications on LinkedIn. It searches for jobs relevant to you, answers all application questions, customizes your resume based on the collected job information (skills, description, company details), and applies to the job. It can apply to 100+ jobs in under 1 hour.
+![Build Status](https://img.shields.io/badge/build-success-brightgreen)
+![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)
+![License](https://img.shields.io/badge/license-AGPLv3-lightgrey)
+![Status](https://img.shields.io/badge/status-Active-brightgreen)
 
 ---
 
-## ✨ Content
-- [Introduction](#job-filling-agent-ai-powered-)
-- [Demo Video](#demo-video)
-- [Install](#⚙️-how-to-install)
-- [Configure](#-how-to-configure)
-- [Contributor Guidelines](#-contributor-guidelines)
-- [Features](#-feature-list)
-- [Updates](#🗓️-major-updates-history)
-- [Disclaimer](#📜-disclaimer)
-- [Terms and Conditions](#🏦-terms-and-conditions)
-- [License](#⚖️-license)
-- [Socials](#🐧-socials)
-- [Community Support](#👌-community-support)
+> "An AI agent that automates job applications, personalizes resumes, answers questions, and helps you land interviews — All while you sleep!" 😎
+
+---
+
+## 📍 About This Project
+
+**Job Filling Agent** is a fully autonomous AI bot that applies for jobs on LinkedIn. It personalizes applications using OpenAI, configures job filters based on user preferences, automates resume selection, answers company questions, and saves all application histories with professional logging and Excel tracking.
+
+With this, applying to 100+ jobs per hour becomes effortless!
+
+---
+
+## 📑 Table of Contents
+- [Demo Video](#-demo-video)
+- [Features](#-features)
+- [How to Install](#-how-to-install)
+- [How to Configure](#-how-to-configure)
+- [Tech Stack](#-tech-stack)
+- [License](#-license)
+- [Author](#-author)
+- [Socials](#-socials)
+- [Community Support](#-community-support)
 
 ---
 
 ## 🎥 Demo Video
-> [Demo Video](https://www.youtube.com/@uddit748)
+[![Watch the Demo](https://img.youtube.com/vi/gMbB1fWZDHw/0.jpg)](https://youtu.be/gMbB1fWZDHw)
 
-[![Watch the demo](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/@uddit748)
+▶️ [Click here to watch the live demo](https://youtu.be/gMbB1fWZDHw)
 
-Click on the image above or use this link to watch how it works!
+---
+
+## ✨ Features
+
+- 🧠 **AI-Powered Resume Customization**
+- 🔍 **Auto Job Search and Filter Application**
+- 📝 **Automatic Form Filling and Question Answering**
+- 📂 **Job Application Logs and Tracking**
+- 🛡️ **Human-like Behavior with Stealth Mode**
+- 📈 **Mass Job Application Automation (100+ Jobs/Hour)**
+- 🖥️ **Optional Local Web UI for Viewing History**
 
 ---
 
 ## ⚙️ How to Install
-1. Install [Python 3.10+](https://www.python.org/downloads/).
-2. Install necessary packages:
+
 ```bash
-pip install undetected-chromedriver pyautogui setuptools openai flask-cors flask
+# 1. Clone the Repository
+$ git clone https://github.com/UDDITwork/job-filling-agent.git
+$ cd job-filling-agent
+
+# 2. Install Dependencies
+$ pip install undetected-chromedriver pyautogui setuptools openai flask-cors flask
+
+# 3. Install Google Chrome (latest version)
+# 4. (Optional) Setup Chromedriver if stealth mode disabled
+
+# 5. Ready to Configure!
 ```
-3. Install [Google Chrome](https://www.google.com/chrome/).
-4. Clone the repo:
-```bash
-git clone https://github.com/UDDITwork/job-filling-agent.git
-cd job-filling-agent
-```
-5. Set up Chrome Driver if needed or run `windows-setup.bat` inside `/setup/`.
-6. Follow configuration steps below.
 
 ---
 
 ## 🔧 How to Configure
-- Edit `/config/personals.py` to set your personal information.
-- Edit `/config/questions.py` for predefined answers.
-- Edit `/config/search.py` to set job search filters.
-- Edit `/config/secrets.py` for LinkedIn credentials and OpenAI key.
-- Edit `/config/settings.py` for bot behavior.
-- Place your resume at the configured location.
-- Run the bot:
+
+- `config/personals.py` ➔ Personal information (name, address, etc.)
+- `config/questions.py` ➔ Answer templates for applications
+- `config/search.py` ➔ Job search filters
+- `config/secrets.py` ➔ LinkedIn credentials and OpenAI key (optional)
+- `config/settings.py` ➔ Behavior settings (stealth mode, background running, etc.)
+
+🛠️ Then run:
 ```bash
-python runAiBot.py
+$ python runAiBot.py
 ```
-- To manage history, run UI:
+
+🌐 To manage history via web UI:
 ```bash
-python app.py
+$ python app.py
+# Open http://localhost:5000
 ```
-Open `http://localhost:5000` in your browser.
 
 ---
 
-## 👨‍💻 Contributor Guidelines
-- Only pull requests to `community-version` are accepted.
-- Follow code styling, function typing, and documentation norms.
-- Validate new config variables properly.
-- Attestation format is required inside your code commits.
+## 🧰 Tech Stack
+
+| Technology | Description |
+|:-----------|:------------|
+| ![Python](https://img.shields.io/badge/Python-3.10+-blue) | Core Programming Language |
+| Selenium / Undetected Chromedriver | Browser Automation |
+| Flask | Web Application for History Tracking |
+| OpenAI | Resume and Cover Letter Generation |
+| Excel / Pandas | Data Management and Logging |
 
 ---
 
-## 🌟 Feature List
-- Auto login
-- Auto search, easy apply
-- Customizable job filters
-- Skill extraction (in development)
-- Humanized mouse and click behavior
-- Save applied jobs info in Excel
-- Error handling and retries
-- Headless browser support
-- Future: ChatGPT powered auto-resume generator (planned)
+## 📜 License
+
+Distributed under the AGPLv3 License.  
+See [LICENSE](LICENSE) for more information.
 
 ---
 
-## 🗓️ Major Updates History
-- Latest patches for LinkedIn updates
-- OpenAI API integration frameworks added
-- Skill extraction from job descriptions implemented
+## 👨‍💻 Author
+
+Developed with passion and precision by **Mr. Uddit**.
+
+- [GitHub: UDDITwork](https://github.com/UDDITwork)
+- [LinkedIn: lorduddit-](https://linkedin.com/in/lorduddit-)
+- [Portfolio Website](https://udditwork.github.io/PORTFOLIO-Uddit/)
+- [YouTube Channel](https://www.youtube.com/@uddit748)
+- [ResearchGate Profile](https://www.researchgate.net/profile/Uddit)
 
 ---
 
-## 📜 Disclaimer
-**This tool is for educational purposes only.**
-Please ensure compliance with LinkedIn's terms of service. All usage is at your own risk.
+## 🔗 Socials
+
+[![GitHub](https://img.shields.io/badge/GitHub-UDDITwork-black?logo=github)](https://github.com/UDDITwork)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-LordUddit-blue?logo=linkedin)](https://linkedin.com/in/lorduddit-)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Udditwork-green?logo=githubpages)](https://udditwork.github.io/PORTFOLIO-Uddit/)
+[![YouTube](https://img.shields.io/badge/YouTube-Uddit748-red?logo=youtube)](https://www.youtube.com/@uddit748)
+[![ResearchGate](https://img.shields.io/badge/ResearchGate-Uddit-teal?logo=researchgate)](https://www.researchgate.net/profile/Uddit)
 
 ---
 
-## 🏦 Terms and Conditions
-- Review LinkedIn scraping policies.
-- No warranties or guarantees provided.
-- Full responsibility of use lies with the user.
+## 🙌 Community Support
+
+- 📚 For support, open a discussion at: [GitHub Discussions](https://github.com/UDDITwork/job-filling-agent/discussions)
+- 📩 For personal queries, feel free to connect via LinkedIn.
 
 ---
 
-## ⚖️ License
-Distributed under the GNU Affero GPLv3 License. See [LICENSE](LICENSE) for more information.
-
----
-
-## 🐧 Socials
-- **GitHub**: [UDDITwork](https://github.com/UDDITwork)
-- **LinkedIn**: [lorduddit-](https://linkedin.com/in/lorduddit-)
-- **Portfolio**: [PORTFOLIO-Uddit](https://udditwork.github.io/PORTFOLIO-Uddit/)
-- **YouTube**: [@uddit748](https://www.youtube.com/@uddit748)
-- **ResearchGate**: [ResearchGate Profile](https://www.researchgate.net/profile/Uddit)
-
-
-## 👌 Community Support
-- For queries and discussions, open an issue on [GitHub Discussions](https://github.com/UDDITwork/job-filling-agent/discussions).
-
-
----
-
-_Developed and customized by Mr. Uddit, inspired by modern AI automation challenges._
+> _"Empowering Job Seekers through Automation and Intelligence — by Mr. Uddit."_ 🚀
